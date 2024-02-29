@@ -7,19 +7,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: url(img/human.jpg); */
-    /* background-size: cover; */
+    background: url(img/cal.jpg);
+    background-size: cover;
     background-color: rgb(41, 10, 10);
     
 }
 .container{
     margin-top: 8%;
-    height: 400px;
+    height: 450px;
     width: 300px;
     background-color: rgb(72, 92, 72);
     text-align: center; 
-    /* background: transparent; */
-    box-shadow:inset 0px 0px 5px rgba(0, 0, 0, 0.4);
+    background: transparent;
+    box-shadow:inset 0px 0px 5px rgba(26, 23, 23, 0.6);
     border-radius: 20px;
 }
 .input-box{
