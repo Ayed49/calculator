@@ -1,7 +1,17 @@
-    const input=document.getElementById('input-box');
-    const buttons=document.querySelectorAll('button');
+const display = document.getElementById('input-box');
+const buttons = document.querySelectorAll('button');
+let string = '';
 
-    const buttonsArray = Array.from(buttons);
+const buttonsArray = Array.from(buttons);
+buttonsArray.forEach(btn => {
+    btn.addEventListener('click', (e) => {
 
 
-    console.log(buttons);
+        
+        string += e.target.innerHTML;
+        display.value = string;
+        console.log(e.target.innerHTML);
+    })
+})
+
+
