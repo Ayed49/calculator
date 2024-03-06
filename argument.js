@@ -7,4 +7,15 @@ function addNumber(num1, num2){
     return sum;
 }
 const sum= addNumber(23, 13, 50, 100);
-console.log(sum);
+// console.log(sum);
+
+
+function getFullName(firstName, lastName){
+    let fullName='';
+    for(const part of arguments){
+        fullName= fullName+part+' ';
+    }
+    return fullName;
+}
+const fullName= getFullName('go', 'hu', 'lo', 'koo');
+console.log(fullName);
