@@ -25,12 +25,18 @@
 // const ans = add(20, 30);
 // console.log(ans);
 
-const doMath= (x, y) =>{
-    const sum=x+y;
-    const dff=x-y;
-    const result=sum*dff;
-    const output=result*8;
-    return output;
-}
-const total =doMath(12, 8);
-console.log(total);
+// const doMath= (x, y) =>{
+//     const sum=x+y;
+//     const dff=x-y;
+//     const result=sum*dff;
+//     const output=result*8;
+//     return output;
+// }
+// const total =doMath(12, 8);
+// console.log(total);
+
+
+const number= [23,12,35];
+const max= Math.max(23,12,35);
+const arrayNumber=Math.max(...number);
+console.log(max, arrayNumber);
