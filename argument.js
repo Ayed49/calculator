@@ -36,7 +36,17 @@
 // console.log(total);
 
 
-const number= [23,12,35];
-const max= Math.max(23,12,35);
-const arrayNumber=Math.max(...number);
-console.log(max, arrayNumber);
+// const number= [23,12,35];
+// const max= Math.max(23,12,35);
+// const arrayNumber=Math.max(...number);
+// console.log(max, arrayNumber);
+
+
+const numbers =[2,4,6,8];
+const output=[];
+
+for(const number of numbers){
+    const result= number *2;
+    output.push(result);
+}
+console.log(output);
