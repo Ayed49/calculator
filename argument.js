@@ -58,11 +58,27 @@ class support {
         this.name=name;
         this.address= address;
     }
-    startSession(){
+     startSession(){
         console.log(this.name, 'start a support session');
+    }
+}
+
+class studentCare{
+    name;
+    designation=' student care';
+    address= 'mon';
+    constructor(name, address){
+        this.name=name;
+        this.address=address;
+    }
+    buildARoutine(student){
+        console.log(this.name, 'build a routine for', student);
     }
 }
 const amr = new support('amir khan', 'bd');
 const ayed= new support();
 amr.startSession();
-console.log(amr);
+
+
+const uo = new studentCare('uo khan', 'dhaka');
+console.log(uo);
