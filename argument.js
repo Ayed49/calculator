@@ -54,13 +54,15 @@ class support {
     name;
     designation ='support web devloper';
     address= 'bd'
-    constructor(name){
+    constructor(name, address){
         this.name=name;
+        this.address= address;
     }
     startSession(){
-        console.log('start a support session');
+        console.log(this.name, 'start a support session');
     }
 }
-const amr = new support('amir khan');
+const amr = new support('amir khan', 'bd');
 const ayed= new support();
+amr.startSession();
 console.log(amr);
