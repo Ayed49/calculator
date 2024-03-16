@@ -41,12 +41,26 @@
 // const arrayNumber=Math.max(...number);
 // console.log(max, arrayNumber);
 
-
-const numbers =[2,4,6,8];
-const output=[];
-
-for(const number of numbers){
-    const result= number *2;
-    output.push(result);
+ 
+// const numbers =[2,4,6,8];
+// const output=[];
+// const dobbleIt= number => number *2
+// for(const number of numbers){
+//     const result= dobbleIt(number);
+//     output.push(result);
+// }
+// console.log(output);
+class support {
+    name;
+    designation ='support web devloper';
+    address= 'bd'
+    constructor(name){
+        this.name=name;
+    }
+    startSession(){
+        console.log('start a support session');
+    }
 }
-console.log(output);
+const amr = new support('amir khan');
+const ayed= new support();
+console.log(amr);
