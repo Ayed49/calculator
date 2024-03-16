@@ -50,13 +50,24 @@
 //     output.push(result);
 // }
 // console.log(output);
-class support {
+
+
+class teamMember{
     name;
     designation ='support web devloper';
     address= 'bd'
     constructor(name, address){
         this.name=name;
         this.address= address;
+    }
+}
+
+class support extends teamMember {
+    groupSupportTime;
+    
+    constructor(name, address, time){
+        super(name, address);
+        this.groupSupportTime=time;
     }
      startSession(){
         console.log(this.name, 'start a support session');
@@ -80,5 +91,5 @@ const ayed= new support();
 amr.startSession();
 
 
-const uo = new studentCare('uo khan', 'dhaka');
+const uo = new support('uo khan', 'dhaka', '11');
 console.log(uo);
