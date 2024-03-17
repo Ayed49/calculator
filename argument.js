@@ -94,8 +94,19 @@
 // const uo = new support('uo khan', 'dhaka', '11');
 // console.log(uo);
 
-const number=[2,4,5,6,7];
-const max= Math.max(2,4,5,6,7);
-const mathArray=Math.max(...number);
-console.log(mathArray);
+// const number=[2,4,5,6,7];
+// const max= Math.max(2,4,5,6,7);
+// const mathArray=Math.max(...number);
+// console.log(mathArray);
+
+const shop ={
+    name:'ayed',
+    address='dhaka',
+    profit= 1400,
+    product= ['laptop', 'hone'],
+    isExpensive: false
+}
+const shopStringfild=JSON.stringify(shop);
+console.log(shop);
+console.log(shopStringfild);
 
