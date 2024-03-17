@@ -52,44 +52,50 @@
 // console.log(output);
 
 
-class teamMember{
-    name;
-    designation ='support web devloper';
-    address= 'bd'
-    constructor(name, address){
-        this.name=name;
-        this.address= address;
-    }
-}
+// class teamMember{
+//     name;
+//     designation ='support web devloper';
+//     address= 'bd'
+//     constructor(name, address){
+//         this.name=name;
+//         this.address= address;
+//     }
+// }
 
-class support extends teamMember {
-    groupSupportTime;
+// class support extends teamMember {
+//     groupSupportTime;
     
-    constructor(name, address, time){
-        super(name, address);
-        this.groupSupportTime=time;
-    }
-     startSession(){
-        console.log(this.name, 'start a support session');
-    }
-}
+//     constructor(name, address, time){
+//         super(name, address);
+//         this.groupSupportTime=time;
+//     }
+//      startSession(){
+//         console.log(this.name, 'start a support session');
+//     }
+// }
 
-class studentCare{
-    name;
-    designation=' student care';
-    address= 'mon';
-    constructor(name, address){
-        this.name=name;
-        this.address=address;
-    }
-    buildARoutine(student){
-        console.log(this.name, 'build a routine for', student);
-    }
-}
-const amr = new support('amir khan', 'bd');
-const ayed= new support();
-amr.startSession();
+// class studentCare{
+//     name;
+//     designation=' student care';
+//     address= 'mon';
+//     constructor(name, address){
+//         this.name=name;
+//         this.address=address;
+//     }
+//     buildARoutine(student){
+//         console.log(this.name, 'build a routine for', student);
+//     }
+// }
+// const amr = new support('amir khan', 'bd');
+// const ayed= new support();
+// amr.startSession();
 
 
-const uo = new support('uo khan', 'dhaka', '11');
-console.log(uo);
+// const uo = new support('uo khan', 'dhaka', '11');
+// console.log(uo);
+
+const number=[2,4,5,6,7];
+const max= Math.max(2,4,5,6,7);
+const mathArray=Math.max(...number);
+console.log(mathArray);
+
