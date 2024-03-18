@@ -99,14 +99,14 @@
 // const mathArray=Math.max(...number);
 // console.log(mathArray);
 
-const shop ={
-    name:'ayed',
-    address='dhaka',
-    profit= 1400,
-    product= ['laptop', 'hone'],
-    isExpensive: false
-}
-const shopStringfild=JSON.stringify(shop);
-console.log(shop);
-console.log(shopStringfild);
+// const shop ={
+//     name:'ayed',
+//     address='dhaka',
+//     profit= 1400,
+//     product= ['laptop', 'hone'],
+//     isExpensive: false
+// }
+// const shopStringfild=JSON.stringify(shop);
+// console.log(shop);
+// console.log(shopStringfild);
 
