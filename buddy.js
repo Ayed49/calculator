@@ -17,7 +17,7 @@ const displaySearchResult = meals =>{
         const div= document.createElement('div');
         div.classList.add('col');
         div.innerHTML =`
-        <div class="col">
+        <div onclick= "loadMealDetile(${meal.idMeal})" class="col">
           <div class="card h-100">
             <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
             <div class="card-body">
@@ -29,4 +29,8 @@ const displaySearchResult = meals =>{
         `;
         searchResult.appendChild(div);
     })
+}
+
+const onclick= loadMealDetile = mealId =>{
+  console.log(mealId);
 }
