@@ -1,17 +1,10 @@
-const loadBuddies = () =>{
-    fetch('https://randomuser.me/api/?results=5')
-    .then(res => res.json())
-    .then(data =>displayBuddies(data));
-}
-loadBuddies();
-const displayBuddies = data =>{
-    const buddies=data.results;
-    
-    const buddiesDiv=document.getElementById('buddies');
-    for(const buddy of buddies){
-        console.log(buddy.name.first, buddy.name.last);
-        const p=document.createElement('p');
-        p.innerText =`name:${buddy.name.title} ${buddy.name.first} ${buddy.name.last} email:${buddy.email}`;
-        buddiesDiv.appendChild(p);
-    }
+const searchFood =()=>{
+    const searchFlid= document.getElementById('search-field');
+    const searchText=searchFlid.value;
+    console.log(searchText);
+    searchFlid.value='';
+    const url =`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`;
+    fetch(url)
+    .then(res =>res.json())
+    .then(data=> console.log(data.meals))
 }
